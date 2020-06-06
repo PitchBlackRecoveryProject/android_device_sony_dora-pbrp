@@ -17,6 +17,9 @@
 # Inherit device configurations
 $(call inherit-product, device/sony/dora/device.mk)
 
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/pb/config/common.mk)
+
 # Device identification
 PRODUCT_DEVICE := dora
 PRODUCT_NAME := omni_dora
